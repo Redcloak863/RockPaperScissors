@@ -1,0 +1,4 @@
+Bob 100
+Ted 200
+Carol 150
+Alice 300
