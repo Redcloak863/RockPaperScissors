@@ -97,13 +97,16 @@ if __name__ == "__main__":
         if pick in game:  # A game choice or something else?
             winners, losers = winnersAndLosers(game, pick)
         else:
-            winners, losers = [], []
+            winners, losers = [], []  # winners and losers must be defined or we'll get an error.
 
         if pick == "!rating":
             print(f"Your rating: {score}")
         elif pick == "!exit":
             bye(score)
             continue_playing = False
+        """
+        The game's logic begins here
+        """
         elif my_pick in winners:
             I_win(my_pick)
         elif my_pick in losers:
